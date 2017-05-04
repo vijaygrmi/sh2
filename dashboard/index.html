@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMART HRMS</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu CSS -->
+<link href="css/sidebar-nav.min.css" rel="stylesheet">
+<!-- animation CSS -->
+<link href="css/animate.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- color CSS -->
+<link href="css/blue.css" id="theme"  rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!-- Preloader -->
+<div class="preloader">
+  <div class="cssload-speeding-wheel"></div>
+</div>
+<div id="wrapper"> 
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-static-top m-b-0">
+    <div class="navbar-header p-r-10 p-l-10"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+      <div class="top-left-part"><a class="logo" href="#"><b><img src="images/logo.png" alt="home" /></b></a></div>
+      <ul class="nav navbar-top-links navbar-left hidden-xs">
+        <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
+        <li>
+          <form role="search" class="app-search hidden-xs">
+            <input type="text" placeholder="Search..." class="form-control">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </form>
+        </li>
+      </ul>
+      <ul class="nav navbar-top-links navbar-right pull-right">
+        <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-bell"></i>
+          </a>
+          <ul class="dropdown-menu mailbox animated bounceInDown">
+            <li>
+              <div class="drop-title">You have 4 new messages</div>
+            </li>
+            <li>
+              <div class="message-center"> <a href="#">
+                <div class="user-img"> <img src="images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Pavan kumar</h5>
+                  <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>John Doe</h5>
+                  <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>John Doe</h5>
+                  <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Pavan kumar</h5>
+                  <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                </a> </div>
+            </li>
+            <li> <a class="text-center" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a></li>
+          </ul>
+          <!-- /.dropdown-messages --> 
+        </li>
+        <!-- /.dropdown -->
+        
+        <li class="dropdown"> <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b> </a>
+          <ul class="dropdown-menu dropdown-user animated flipInY">
+            <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+            <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+            <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+          </ul>
+          <!-- /.dropdown-user --> 
+        </li>
+        
+        
+        <!-- /.dropdown -->
+      </ul>
+    </div>
+    <!-- /.navbar-header --> 
+    <!-- /.navbar-top-links --> 
+    <!-- /.navbar-static-side --> 
+  </nav>
+  <!-- Left navbar-header -->
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search hidden-sm hidden-md hidden-lg"> 
+          <!-- input-group -->
+          <div class="input-group custom-search-form">
+            <input type="text" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+            <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+            </span> </div>
+          <!-- /input-group --> 
+        </li>
+        <li><a href="#" class="waves-effect">My Wall</a></li>
+        <li> <a href="#" class="waves-effect">Organization</a>
+          <ul class="nav nav-second-level">
+            <li><a href="#">Policies</a></li>
+            <li><a href="#">Employees</a></li>
+            <li><a href="#">Work Groups</a></li>
+            <li><a href="#">Leaves Calendar</a></li>
+            <li><a href="#">Conference Rooms</a></li>
+            <li><a href="#">Conference Calendar</a></li>
+            <li><a href="#">Milestones</a></li>
+            <li><a href="#">Structure</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="waves-effect">Attendance</a>
+          <ul class="nav nav-second-level">
+            <li><a href="#">My Attendance</a></li>
+            <li><a href="#">Employee Attendance</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="waves-effect">Leaves</a>
+          <ul class="nav nav-second-level">
+            <li><a href="#">My Leaves/My Permissions</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="waves-effect">Help Desk</a>
+          <ul class="nav nav-second-level">
+            <li><a href="#">My Tickets</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="waves-effect">Expense Claims</a>
+          <ul class="nav nav-second-level">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">My Claims</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="waves-effect">My Amzur</a>
+          <ul class="nav nav-second-level">
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">My Appraisals</a></li>
+            <li><a href="#">My Work Groups</a></li>
+            <li><a href="#">My Letters</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Left navbar-header end --> 
+  <!-- Page Content -->
+  <div id="page-wrapper">
+    <div class="container-fluid">
+      <div class="row bg-title">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+          <h4 class="page-title">My Wall</h4>
+        </div>
+        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">My Wall</li>
+          </ol>
+        </div>
+        <!-- /.col-lg-12 --> 
+      </div>
+      
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-2 col-lg-2 col-sm-6 col-xs-12">
+          <div class="white-box"> <img src="images/users/5.jpg" class="img-responsive" alt=""/>
+            <ul class="profileSection">
+              <li class="name">John Doe</li>
+              <li class="designation">Software Developer</li>
+              <li class="company">Amzur Technologies</li>
+            </ul>
+          </div>
+          <section>
+            <div class="white-box">
+              <div class="box-title">Birthdays</div>
+              <div class="message-center"> <a href="#">
+                <div class="user-img"> <img src="images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Pavan kumar</h5>
+					<span class="mail-desc">12th May</span></div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Sonu Nigam</h5>
+                  <span class="mail-desc">08th May</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Arijit Sinh</h5>
+					<span class="mail-desc">05th May</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/genu.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Genelia Deshmukh</h5>
+                  <span class="mail-desc">19th May</span> </div>
+                </a> <a href="#" class="b-none">
+                <div class="user-img"> <img src="images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Pavan kumar</h5>
+                  <span class="mail-desc">26th May</span> </div>
+                </a> </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+          <div class="white-box p-0">
+            <div id="postPanel">
+              <textarea rows="3" style="width: 100%;"></textarea>
+            </div>
+            <div style="overflow: auto;padding: 2px 5px 6px 5px" class="postBx"> <a href=""><i class="fa fa-map-marker"></i></a> <a href=""><i class="fa fa-photo"></i></a> <a href=""><i class="fa fa-camera"></i></a>
+              <button class="btn btn-skype pull-right">Post</button>
+            </div>
+          </div>
+          <div class="white-box">
+            <div> <span class="pull-left"><img src="images/avatars/img-1.jpg" class="max-w-65 m-r-10"></span>
+              <div class="post_wall">
+                <h4 class="card-title">HR Admin</h4>
+                <p class="post_time">2 days Ago</p>
+                <p class="post_content mt-30">Many Many Happy Returns of the Day Mark Zuckerberg .Hope you have a wonderful day and that the year ahead is filled with joy, many wonderful surprises and gives you lasting memories that you will cherish in all the days ahead.</p>
+                <hr>
+              </div>
+              <div class="postResponse"> <a href="" class="pull-right"> <i class="fa fa-comments"></i> <span>23</span> Comments</a> <a href="">Shankar,</a> <a href="">Meher,</a> <a href="">Ravi</a> <span>and <a href="" class="label label-success">8</a> others like this post</span> </div>
+              <div class="postcomment">
+                <input type="text" class="form-control card-title" placeholder="Add a comment...">
+              </div>
+              <div class="comment-block">
+                <div> <span class="pull-left"><img src="images/avatars/img-3.jpg" class="max-w-50"></span>
+                  <div class="userComment">
+                    <p><span class="commentedBy"> <a href="">Mark Zuckerberg </a> </span>Lol... Its soooo interesting</p>
+                    <p class="commentTime">About 15 minites ago</p>
+                    <p> <span> <a href=""><i class="fa fa-thumbs-o-up"></i> Like</a> </span> <span> <a href="">Surya,</a><a href="">Shankar </a> and 2 others likes this comment </span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-block">
+                <div> <span class="pull-left"><img src="images/avatars/img-3.jpg" class="max-w-50"></span>
+                  <div class="userComment">
+                    <p><span class="commentedBy"> <a href="">Mark Zuckerberg </a> </span>Lol... Its soooo interesting</p>
+                    <p class="commentTime">About 15 minites ago</p>
+                    <p> <span> <a href=""><i class="fa fa-thumbs-o-up"></i> Like</a> </span> <span> <a href="">Surya,</a><a href="">Shankar </a> and 2 others likes this comment </span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-block">
+                <div> <span class="pull-left"><img src="images/avatars/img-3.jpg" class="max-w-50"></span>
+                  <div class="userComment">
+                    <p><span class="commentedBy"> <a href="">Mark Zuckerberg </a> </span>Lol... Its soooo interesting</p>
+                    <p class="commentTime">About 15 minites ago</p>
+                    <p> <span> <a href=""><i class="fa fa-thumbs-o-up"></i> Like</a> </span> <span> <a href="">Surya,</a><a href="">Shankar </a> and 2 others likes this comment </span> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+          <section>
+          	<div class="white-box">
+              <div class="box-title">New Employees</div>
+              <div class="message-center"> <a href="#">
+                <div class="user-img"> <img src="images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Pavan kumar</h5>
+					<span class="mail-desc">Software Developer</span></div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Sonu Nigam</h5>
+                  <span class="mail-desc">Angular Developer</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Arijit Sinh</h5>
+					<span class="mail-desc">Netsuite Consultant</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="images/users/genu.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Genelia Deshmukh</h5>
+                  <span class="mail-desc">Bencj Sales</span> </div>
+                </a> <a href="#" class="b-none">
+                <div class="user-img"> <img src="images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Pavan kumar</h5>
+                  <span class="mail-desc">Recruiter</span> </div>
+                </a> </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!--row --> 
+      
+      
+    </div>
+    <!-- /.container-fluid -->
+    <footer class="footer text-center"> 2017 &copy; SMART HRMS </footer>
+  </div>
+  <!-- /#page-wrapper --> 
+</div>
+<!-- /#wrapper --> 
+<!-- jQuery --> 
+<script src="js/jquery.min.js"></script> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Menu Plugin JavaScript --> 
+<script src="js/sidebar-nav.min.js"></script> 
+<!--slimscroll JavaScript --> 
+<script src="js/jquery.slimscroll.js"></script> 
+<!--Wave Effects --> 
+<script src="js/waves.js"></script> 
+<!--Counter js --> 
+<script src="js/jquery.waypoints.js"></script> 
+<script src="js/jquery.counterup.min.js"></script> 
+<!-- Custom Theme JavaScript --> 
+<script src="js/custom.min.js"></script> 
+<script src="js/dashboard1.js"></script>
+</body>
+</html>
